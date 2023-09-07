@@ -1,0 +1,16 @@
+[[language]]
+name = "dockerfile"
+scope = "text.docker"
+file-types = ["docker", "Dockerfile"]
+roots = []
+
+[[language]]
+name = "cabal"
+scope = "text.cabal"
+file-types = ["cabal"]
+roots = []
+
+[[language]]
+name = "python"
+auto-format = true
+
