@@ -1,7 +1,7 @@
 [[language]]
 name = "dockerfile"
 scope = "text.docker"
-file-types = ["docker", "Dockerfile"]
+file-types = ["docker", "podman", "image", "Containerfile", "Dockerfile"]
 roots = []
 
 [[language]]
@@ -13,4 +13,15 @@ roots = []
 [[language]]
 name = "python"
 auto-format = true
+
+[[language]]
+name = "groovy"
+scope = "source.groovy"
+injection-regex = "groovy"
+file-types = ["groovy", "Jenkinsfile"]
+roots = []
+
+[[grammar]]
+name = "groovy"
+source = { git = "https://github.com/Decodetalkers/tree-sitter-groovy", rev = "gh-pages" }
 
