@@ -16,12 +16,14 @@ auto-format = true
 
 [[language]]
 name = "groovy"
+language-id = "groovy"
 scope = "source.groovy"
-injection-regex = "groovy"
-file-types = ["groovy", "Jenkinsfile"]
-roots = []
+# file-types = ["groovy", "jenkinsfile", { glob = "Jenkinsfile" },  { glob = "Jenkinsfile.*" }]
+file-types = ["groovy", "jenkinsfile", "Jenkinsfile"]
+shebangs = ["groovy"]
+comment-token = "//"
+indent = { tab-width = 2, unit = "  " }
 
 [[grammar]]
 name = "groovy"
-source = { git = "https://github.com/Decodetalkers/tree-sitter-groovy", rev = "gh-pages" }
-
+source = { git = "https://github.com/Decodetalkers/tree-sitter-groovy", rev = "7e023227f46fee428b16a0288eeb0f65ee2523ec" }
